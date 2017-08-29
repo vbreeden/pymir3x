@@ -5,21 +5,12 @@ Ported from https://github.com/jsawruk/pymir: 29 August 2017
 """
 
 import numpy
-import scipy
 from numpy.lib import stride_tricks
 
 
 def energy(audio_data, window_size = 256):
     """
     Compute the energy of the given audio data, using the given windowSize
-
-    Example:
-    >>> from test import chirp
-    >>> s = chirp()
-    >>> e = energy(s)
-    >>> e
-    array([ 0.26917694,  0.26901879,  0.26918094, ...,  0.18757919,
-            0.18656895,  0.18561012])
     """
     audio_length = len(audio_data)
 
