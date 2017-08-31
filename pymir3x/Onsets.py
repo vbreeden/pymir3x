@@ -9,9 +9,7 @@ Ported from https://github.com/jsawruk/pymir: 30 August 2017
 """
 
 import numpy
-import sys
 
-from numpy import Inf, NaN, arange, asarray, isscalar
 from pymir3x import Energy, SpectralFlux
 
 
@@ -86,6 +84,9 @@ def peaksAboveAverage(data, window_size):
     return peaks
 
 # Reserved for future implementation:
+# import sys
+# from numpy import Inf, NaN, arange, asarray, isscalar
+#
 # def peakPicking(onsets, windowSize=1024, threshold=1.0):
 #     peaks = []
 #
